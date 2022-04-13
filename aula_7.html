@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<html>
+
+	<head>
+	<title> Imersão Dev Alura - Aula 06</title>
+	<link rel="stylesheet" type="text/css" href="aula_7.css">
+	</head> 
+
+	<body>
+
+		<div class="container">
+	        <!--<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+	            alt="">-->
+	        <h1 class="page-title">Ana Sampaio proudly presents: "A Pokemon Card Game"</h1>
+
+	        <button onclick="sortearCarta()" id="btnSortear">Pick a card</button>
+
+	        <form id="form">
+	            <h2>Choose an Attribute</h2>
+	            <p class="rules">The player with the highest value of the chosen attribute wins</p>
+	            <div class="opcoes" id="opcoes"></div>
+	            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta">
+                    	<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                        style=" width: inherit; height: inherit; position: absolute;">
+                    </div>
+                </div>
+            	</div>
+	            <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Place Your Bet</button>
+	            <div id="resultado"></div> 
+	        </form>
+    	</div>
+
+		<script src="aula_7.js"></script>
+	</body>
+</html>
+
+<!-- DESAFIOS
+	1 - Arrumar CSS das cartas;
+	2 - Criar de fato um baralho, com várias outras cartas;
+	3 - Utilizar seus personagens e jogos preferidos nesse projeto;
+	4 - Transformar as funções exibirCartaMaquina() e exibirCartaJogador() em apenas uma, chamada exibirCarta(), utilizando para isso a passagem de parâmetros;
+	5 - Verificar o que acontece caso você não selecione nenhum dos atributos e como solucionar
+
+	6 (talvez) - Desenvolver um sistema em que a cada carta que um jogador ganhe, ele fique com a carta do oponente e vice versa
+-->
